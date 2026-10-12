@@ -46,13 +46,13 @@ Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 - **And some calm.** A Firefly jar that shows every live session at a glance, a small arcade for the minutes while a turn runs, a daily tally, launch presets, replay export, and dev-container sessions.
 
 <p align="center">
-  <img src="docs/img/tour.gif" alt="A slideshow of four screenshots of Mastlight: the Changes tab, the Agent Board, a limit warning, and conversation search." width="760">
+  <img src="docs/img/tour.gif" alt="A slideshow of three screenshots of Mastlight: the Changes tab, a limit warning, and conversation search." width="760">
 </p>
 <p align="center"><sub>A slideshow of the screenshots, not a recording. The sample sessions in them are made up.</sub></p>
 
-| Agent Board | Limits Pilot | Search |
-|---|---|---|
-| <img src="docs/img/agent-board-dark.png" alt="The Agent Board listing finished subagents with their outcome" width="280"> | <img src="docs/img/limits-dark.png" alt="A banner warning an account is at 82% of its 5-hour limit" width="280"> | <img src="docs/img/search-dark.png" alt="Searching every conversation for a word, with matches highlighted" width="280"> |
+| Limits Pilot | Search |
+|---|---|
+| <img src="docs/img/limits-dark.png" alt="A banner warning an account is at 82% of its 5-hour limit" width="400"> | <img src="docs/img/search-dark.png" alt="Searching every conversation for a word, with matches highlighted" width="400"> |
 
 ## Requirements
 
