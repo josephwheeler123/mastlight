@@ -1,0 +1,48 @@
+name: Bug report
+description: Something in Mastlight does not work or looks wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us. Issues here are public, so please leave out private paths, project names, tokens and conversation text. For a security problem, email hello@mastlight.io instead (see SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Mastlight version
+      description: Shown in Settings, or in the file name you downloaded (for example 1.1.2).
+      placeholder: "1.1.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options:
+        - Mac (Apple silicon)
+        - Windows (Intel or AMD)
+        - Windows on Arm
+    validations:
+      required: true
+  - type: input
+    id: osversion
+    attributes:
+      label: macOS or Windows version
+      placeholder: "macOS 15.2, or Windows 11 23H2"
+  - type: input
+    id: claude
+    attributes:
+      label: Claude Code version
+      description: The output of `claude --version`.
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw instead. A screenshot helps if it shows nothing private.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you know them.

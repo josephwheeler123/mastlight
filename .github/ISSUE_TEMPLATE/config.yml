@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question or idea
+    url: https://github.com/josephwheeler123/mastlight/discussions
+    about: Questions, ideas and show-and-tell go in Discussions.
+  - name: Getting started and FAQ
+    url: https://mastlight.io/start
+    about: First-open steps for Mac and Windows, with pictures.
+  - name: Security problem
+    url: https://github.com/josephwheeler123/mastlight/blob/main/SECURITY.md
+    about: Please email hello@mastlight.io rather than opening a public issue.

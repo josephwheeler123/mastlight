@@ -1,0 +1,29 @@
+name: Feature request
+description: An idea for Mastlight
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas and "how do you do X" questions also fit well in [Discussions](https://github.com/josephwheeler123/mastlight/discussions). Issues are public, so leave out anything private.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation first, then the idea. For example, "I run six sessions across two accounts and I lose track of ...".
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Where do you use Mastlight
+      options:
+        - Mac
+        - Windows
+        - Both
