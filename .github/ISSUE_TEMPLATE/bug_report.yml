@@ -10,7 +10,7 @@ body:
     id: version
     attributes:
       label: Mastlight version
-      description: Shown in Settings, or in the file name you downloaded (for example 1.1.2).
+      description: Shown in About Mastlight (Settings, then About Mastlight), or in the file name you downloaded (for example 1.1.2).
       placeholder: "1.1.2"
     validations:
       required: true
