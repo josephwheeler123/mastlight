@@ -75,7 +75,7 @@ Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 
 ## What is open and what is not
 
-This repository holds **release downloads, this README and the issue tracker**. The **source code is not public**. Mastlight is proprietary — all rights reserved (see [LICENSE](LICENSE)); the installers are free to download and use, and no open-source licence is granted; the third-party software the app bundles keeps its own licences, which ship inside the app. If that matters for what you want to do, ask: hello@mastlight.io.
+This repository holds **release downloads, this README and the issue tracker**. The **source code is not public**. Mastlight is proprietary — all rights reserved (see [LICENSE](LICENSE)); the installers are free to download and use, and no open-source license is granted; the third-party software the app bundles keeps its own licenses, which ship inside the app. If that matters for what you want to do, ask: hello@mastlight.io.
 
 ## Reporting bugs
 
