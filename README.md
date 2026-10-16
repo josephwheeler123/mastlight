@@ -15,11 +15,11 @@ Mastlight is in **early preview**. It is free, it has no account and no telemetr
 
 ## Download
 
-Current version: **1.1.8**.
+Current version: **1.1.10** (Mac). Windows stays on **1.1.8** for this release.
 
 | | File | For | Size | SHA-256 |
 |---|---|---|---|---|
-| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.7 MB | `68c67be982071a2958825c86d0596ff2fc34ef786a64edb0a63db197a47b3448` |
+| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.7 MB | `44cb91e80064bce529f163ce80c5ef587136943033c551c0d7100354d133458f` |
 | **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.7 MB | `89580c274d0bff7945e96594ba79e98159a58a4ab46faa8daabb3d2b4b9d6d9a` |
 | **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.8 MB | `4f50000494989f4cd26c6e873e3d036c805b1e2d80b8a097870ec6f9f4bbcfcc` |
 
@@ -28,7 +28,7 @@ Every file is also on the [release page](https://github.com/josephwheeler123/mas
 **The builds are not signed.** There is no Apple Developer ID or Windows code-signing certificate behind them yet.
 - **Mac:** open the DMG, drag Mastlight onto Applications. On first open macOS refuses; choose Done, then go to System Settings, Privacy & Security, click **Open Anyway** next to Mastlight and confirm (macOS 15 and later no longer accept right-click and Open). If macOS says the app is "damaged" and offers no Open Anyway, run `xattr -dr com.apple.quarantine /Applications/Mastlight.app` once in Terminal.
 - **Windows:** run the installer. SmartScreen says "Windows protected your PC": choose **More info**, then **Run anyway**. No administrator prompt.
-- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.1.8 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
+- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.1.8 is current (1.1.10 is Mac only). It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
 
 Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 
