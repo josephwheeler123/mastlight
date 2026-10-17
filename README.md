@@ -15,20 +15,20 @@ Mastlight is in **early preview**. It is free, it has no account and no telemetr
 
 ## Download
 
-Current version: **1.1.10**.
+Current version: **1.1.11**.
 
 | | File | For | Size | SHA-256 |
 |---|---|---|---|---|
-| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.7 MB | `44cb91e80064bce529f163ce80c5ef587136943033c551c0d7100354d133458f` |
-| **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.7 MB | `601fc931fc25ce6a8c9b6a776dff95f8eda4687268262b95b4f02d3f3a38a014` |
-| **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.8 MB | `1e3dfc62f387e7739e8621544cd5a51c932d83612bf1d0cc179d6b2200f14dc7` |
+| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.7 MB | `c36652a1ad320c6a4003d572a0f3bcf4af8969958d63cf7e5d7e08863e0a9ae4` |
+| **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.7 MB | `9e699fd2790b783b189b13ae6fa74d9c6a4bf16151e09ee46886c297c8023dba` |
+| **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.8 MB | `13af531c6a071a5e45e43ddb67bca32f9c313b5f7b7ca3fb268cb46561b0d85c` |
 
 Every file is also on the [release page](https://github.com/josephwheeler123/mastlight/releases/latest). Check a download yourself if you like: `shasum -a 256 ~/Downloads/Mastlight-arm64.dmg` on a Mac, `Get-FileHash .\Mastlight-Setup-x64.exe` in PowerShell on Windows.
 
 **The builds are not signed.** There is no Apple Developer ID or Windows code-signing certificate behind them yet.
 - **Mac:** open the DMG, drag Mastlight onto Applications. On first open macOS refuses; choose Done, then go to System Settings, Privacy & Security, click **Open Anyway** next to Mastlight and confirm (macOS 15 and later no longer accept right-click and Open). If macOS says the app is "damaged" and offers no Open Anyway, run `xattr -dr com.apple.quarantine /Applications/Mastlight.app` once in Terminal.
 - **Windows:** run the installer. SmartScreen says "Windows protected your PC": choose **More info**, then **Run anyway**. No administrator prompt.
-- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.1.10 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
+- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.1.11 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
 
 Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 
