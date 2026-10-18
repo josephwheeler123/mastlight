@@ -15,7 +15,7 @@ Mastlight is in **early preview**. It is free, it has no account and no telemetr
 
 ## Download
 
-Current version: **1.1.11**.
+Current version: **1.2.0**.
 
 | | File | For | Size | SHA-256 |
 |---|---|---|---|---|
@@ -28,7 +28,7 @@ Every file is also on the [release page](https://github.com/josephwheeler123/mas
 **The builds are not signed.** There is no Apple Developer ID or Windows code-signing certificate behind them yet.
 - **Mac:** open the DMG, drag Mastlight onto Applications. On first open macOS refuses; choose Done, then go to System Settings, Privacy & Security, click **Open Anyway** next to Mastlight and confirm (macOS 15 and later no longer accept right-click and Open). If macOS says the app is "damaged" and offers no Open Anyway, run `xattr -dr com.apple.quarantine /Applications/Mastlight.app` once in Terminal.
 - **Windows:** run the installer. SmartScreen says "Windows protected your PC": choose **More info**, then **Run anyway**. No administrator prompt.
-- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.1.11 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
+- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.2.0 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
 
 Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 
@@ -43,6 +43,12 @@ Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 - **Agent Board.** Every subagent a session launched, running or finished, with task, model, outcome and transcript, plus a strip showing a `GRAPH.md`'s progress.
 - **Limits Pilot.** Each account's gauge forecasts when the limit will run out, warns at 80% and 95%, and shows when another account has more room. It never switches accounts for you.
 - **Search every conversation.** Claude Code deletes its own transcripts after 30 days; Mastlight keeps its own copy (secrets redacted in the index) and searches all of it.
+- **Actions and a git line.** Each session shows its branch, lines changed, uncommitted files and the PR with its checks. The Actions menu (commit, push, open a PR, review, fix review comments, resolve conflicts, recap) puts an editable prompt in Claude's box and waits for your Enter.
+- **Usage at API prices.** What your tokens would have cost on the API, by day, model, project, account and session.
+- **Split panes.** ⌘D / ⇧⌘D (Ctrl+Shift+D / Ctrl+Shift+H on Windows) add a shell beside a session, in its folder; the layout survives a restart.
+- **Schedules.** Start a session with a prompt once, daily, on weekdays, every few hours or by cron, even with the window closed.
+- **Sessions can run Mastlight.** An MCP server and a `mastlight` command (`--json`) let one Claude session list, read, message, answer, start and stop the others. Every call lands in an audit log in Settings. On by default; one switch turns it off.
+- **No silent blocks.** A prompt left open in the terminal shows as a "Waiting on a prompt in the terminal" card, and your draft is kept until you answer.
 - **And some calm.** A Firefly jar that shows every live session at a glance, a small arcade for the minutes while a turn runs, a daily tally, launch presets, replay export, and dev-container sessions.
 
 <p align="center">
