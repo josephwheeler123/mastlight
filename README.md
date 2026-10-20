@@ -15,20 +15,20 @@ Mastlight is in **early preview**. It is free, it has no account and no telemetr
 
 ## Download
 
-Current version: **1.2.5**. New in 1.2.5: file names and links are no longer hidden in Conversation, and ⌘-click (Ctrl-click on Windows) opens web links and file paths in the terminal, as in iTerm. Fixed in 1.2.4: Conversation shows each reply once, and updates no longer ask to restart the session helper unless its code changed. New in 1.2.3: Conversation shows Claude's progress updates again as a quiet log beside the tool steps; only one-line "checking X" notes fold. New in 1.2.2: agent reports open from a one-line summary, and one shared list of secret shapes masks more key types in the MCP audit log. Fixed in 1.2.1: the Changes tab works on big repos; your queued messages show; NEW marks no longer pile up.
+Current version: **1.2.6**. Fixed in 1.2.6: session cards no longer spill past the sidebar; the branch name shortens first and "+5 projects" becomes "+5 proj" when space is tight. New in 1.2.5: file names and links are no longer hidden in Conversation, and ⌘-click (Ctrl-click on Windows) opens web links and file paths in the terminal, as in iTerm. Fixed in 1.2.4: Conversation shows each reply once, and updates no longer ask to restart the session helper unless its code changed. New in 1.2.3: Conversation shows Claude's progress updates again as a quiet log beside the tool steps; only one-line "checking X" notes fold. New in 1.2.2: agent reports open from a one-line summary, and one shared list of secret shapes masks more key types in the MCP audit log. Fixed in 1.2.1: the Changes tab works on big repos; your queued messages show; NEW marks no longer pile up.
 
 | | File | For | Size | SHA-256 |
 |---|---|---|---|---|
-| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.9 MB | `b8dc3c305630e3f674c7f4ab049905fe0d389a7627930d076a828683300f04bf` |
-| **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.8 MB | `bc00579cc23d261f71cbf19142bb631dfcb2f4fc33b91855bff628fb9f161f4e` |
-| **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.9 MB | `2e40873f2fcfda70c5d2883a1e2c7d63256b044d32f7db532be6caebc630c4cd` |
+| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.9 MB | `652bca02da899340ff0e92eab449e717f783d751e18dbe427810b8248e14080c` |
+| **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.8 MB | `94d6ab40c8b6e79c41dd36f0d95fcb29792f5428eb635f01cddd1036458f13be` |
+| **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.9 MB | `aeae9fe443a700ff8754b2c31cf57aac056bebdc46296552a6581f3235e7c77b` |
 
 Every file is also on the [release page](https://github.com/josephwheeler123/mastlight/releases/latest). Check a download yourself if you like: `shasum -a 256 ~/Downloads/Mastlight-arm64.dmg` on a Mac, `Get-FileHash .\Mastlight-Setup-x64.exe` in PowerShell on Windows.
 
 **The builds are not signed.** There is no Apple Developer ID or Windows code-signing certificate behind them yet.
 - **Mac:** open the DMG, drag Mastlight onto Applications. On first open macOS refuses; choose Done, then go to System Settings, Privacy & Security, click **Open Anyway** next to Mastlight and confirm (macOS 15 and later no longer accept right-click and Open). If macOS says the app is "damaged" and offers no Open Anyway, run `xattr -dr com.apple.quarantine /Applications/Mastlight.app` once in Terminal.
 - **Windows:** run the installer. SmartScreen says "Windows protected your PC": choose **More info**, then **Run anyway**. No administrator prompt.
-- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.2.5 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
+- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.2.6 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
 
 Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 
