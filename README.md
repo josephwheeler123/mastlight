@@ -15,20 +15,20 @@ Mastlight is in **early preview**. It is free, it has no account and no telemetr
 
 ## Download
 
-Current version: **1.2.3**. New in 1.2.3: Conversation shows Claude's progress updates again as a quiet log beside the tool steps; only one-line "checking X" notes fold. New in 1.2.2: agent reports open from a one-line summary, and one shared list of secret shapes masks more key types in the MCP audit log. Fixed in 1.2.1: the Changes tab works on big repos; your queued messages show; NEW marks no longer pile up.
+Current version: **1.2.4**. Fixed in 1.2.4: Conversation shows each reply once, and updates no longer ask to restart the session helper unless its code changed. New in 1.2.3: Conversation shows Claude's progress updates again as a quiet log beside the tool steps; only one-line "checking X" notes fold. New in 1.2.2: agent reports open from a one-line summary, and one shared list of secret shapes masks more key types in the MCP audit log. Fixed in 1.2.1: the Changes tab works on big repos; your queued messages show; NEW marks no longer pile up.
 
 | | File | For | Size | SHA-256 |
 |---|---|---|---|---|
-| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.9 MB | `621330e78ce20d6980cc08d2d686d973956011161a898a6c5150edaece8108e9` |
-| **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.8 MB | `69c48635862664147737022400d342f26d5c1c77ed4991ff857013b5f4fcfeef` |
-| **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.9 MB | `d5f44ec184ddf1e6fc3d6a602a2565c6127ef3df97417d71bb5f4b35436f4135` |
+| **Mac** | [Mastlight-arm64.dmg](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-arm64.dmg) | Apple silicon (M1 or newer), macOS 13 (Ventura) or later | 147.9 MB | `7d76f2fbcd27fea7aa30a95d8de8df635ef501a17e6178b25a80a3be6f8def59` |
+| **Windows** (new) | [Mastlight-Setup-x64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-x64.exe) | Intel or AMD PCs, Windows 10 (1809) or 11 | 123.8 MB | `81e5d0d255bb68562c8adc24b83fb858d36130907cdbae9cd3d62cecef197ae9` |
+| **Windows on Arm** (new) | [Mastlight-Setup-arm64.exe](https://github.com/josephwheeler123/mastlight/releases/latest/download/Mastlight-Setup-arm64.exe) | Arm PCs (Snapdragon, Surface Pro X), Windows 10 (1809) or 11 | 116.9 MB | `f0acc6e6a632b690d6d08d069c57f125f10f4690ed32debd6c42b3feefbc2ff7` |
 
 Every file is also on the [release page](https://github.com/josephwheeler123/mastlight/releases/latest). Check a download yourself if you like: `shasum -a 256 ~/Downloads/Mastlight-arm64.dmg` on a Mac, `Get-FileHash .\Mastlight-Setup-x64.exe` in PowerShell on Windows.
 
 **The builds are not signed.** There is no Apple Developer ID or Windows code-signing certificate behind them yet.
 - **Mac:** open the DMG, drag Mastlight onto Applications. On first open macOS refuses; choose Done, then go to System Settings, Privacy & Security, click **Open Anyway** next to Mastlight and confirm (macOS 15 and later no longer accept right-click and Open). If macOS says the app is "damaged" and offers no Open Anyway, run `xattr -dr com.apple.quarantine /Applications/Mastlight.app` once in Terminal.
 - **Windows:** run the installer. SmartScreen says "Windows protected your PC": choose **More info**, then **Run anyway**. No administrator prompt.
-- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.2.3 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
+- **Windows is new and untested on real PCs.** 1.1.2 was the first public Windows release; 1.2.4 is current. It was built and checked on a Mac, not run on a real Windows PC yet, so expect rough edges and please [tell us](#reporting-bugs) what you find.
 
 Step by step, with pictures, on each system: **<https://mastlight.io/start>**.
 
